@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>About | First Chapter Press</title>
+<meta name="description" content="First Chapter Press is a small independent imprint for cozy small-town mysteries.">
+<link rel="canonical" href="https://firstchapterpress.com/about.html">
+<meta property="og:title" content="About | First Chapter Press">
+<meta property="og:description" content="First Chapter Press is a small independent imprint for cozy small-town mysteries.">
+<meta property="og:image" content="https://firstchapterpress.com/img/twisted-leaf.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%231c1a22'/%3E%3Ctext x='32' y='45' font-family='Georgia' font-size='38' font-style='italic' fill='%23d39a52' text-anchor='middle'%3Ef%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="mast"><div class="wrap">
+  <a class="logo" href="/">First Chapter <i>Press</i></a>
+  <nav><a href="/#lists">Reading lists</a><a href="/#series">Our series</a><a href="/authors.html">For authors</a><a href="/about.html">About</a></nav>
+</div>
+<div class="issue"><div class="wrap"><span>The Cozy Shelf &middot; No. 1</span><span>Small-town mysteries, chosen by a reader</span></div></div>
+</header>
+<section class="article"><div class="narrow">
+<span class="kicker">About</span>
+<h1>A small press for small towns</h1>
+<p>First Chapter Press is a tiny independent imprint. We publish cozy mysteries set in harbor towns on the Washington coast, and we keep this site for everybody who reads the same kind of book we like to write.</p>
+<p>It's run by Claire Willowbrook, author of the Twisted Leaf and Foxglove Nursery mysteries. The reading lists are books we'd recommend to a friend. Our own books are always marked as ours.</p>
+<h2 id="disclosure" style="font-family:var(--display);font-size:32px;margin-top:40px">Disclosure</h2>
+<p>First Chapter Press is a small independent imprint, and some of the books on this site are ours (they&#x27;re marked). As an Amazon Associate I earn from qualifying purchases. Links to Amazon on this site may earn us a small commission at no extra cost to you. Sponsored features in the weekly letter are labeled as sponsored. Being paid never decides what goes on a reading list.</p>
+<p>Questions: <a href="mailto:hello@firstchapterpress.com">hello@firstchapterpress.com</a></p>
+</div></section>
+<footer><div class="wrap">
+  <div><h4>First Chapter Press</h4><p>A tiny imprint for small-town mysteries. We publish a few, read a great many, and send one good letter a week.</p></div>
+  <div><h4>Read</h4><p><a href="/tea-shop-mysteries.html">Tea shop mysteries</a><br><a href="/garden-mysteries.html">Garden &amp; poison-plant mysteries</a><br><a href="/books-like-thursday-murder-club.html">Books like The Thursday Murder Club</a></p></div>
+  <div><h4>Small print</h4><p><a href="/about.html#disclosure">Disclosure</a><br><a href="/privacy.html">Privacy</a><br><a href="/authors.html">Feature your book</a></p></div>
+</div>
+<div class="wrap"><p style="margin-top:26px;font-size:12px;color:#6f675c">First Chapter Press is a small independent imprint, and some of the books on this site are ours (they&#x27;re marked). As an Amazon Associate I earn from qualifying purchases. Links to Amazon on this site may earn us a small commission at no extra cost to you. &copy; 2026 First Chapter Press.</p></div>
+</footer>
+<script>
+function fcpSubscribe(f){
+  var msg=f.parentNode.querySelector('.formmsg'); var email=f.email.value.trim();
+  var url='https://assets.mailerlite.com/jsonp/2493463/forms/201066353182901960/subscribe';
+  if(!url){msg.textContent='Sign-ups open in a moment. Please try again shortly.';return false;}
+  var b=f.querySelector('button'); b.disabled=true; b.textContent='...';
+  var data=new FormData(); data.append('fields[email]',email); data.append('ml-submit','1'); data.append('anticsrf','true');
+  fetch(url,{method:'POST',body:data}).then(function(r){return r.json().catch(function(){return {success:r.ok}})})
+   .then(function(j){ if(j && j.success!==false){f.style.display='none';msg.innerHTML='<b>You\'re in.</b> Your free story is on its way. Give it a minute, and peek in Promotions if it hides.';} else {msg.textContent='That didn\'t go through. Check the address and try again?';b.disabled=false;b.textContent='Join';} })
+   .catch(function(){msg.textContent='That didn\'t go through. Please try again.';b.disabled=false;b.textContent='Join';});
+  return false;
+}
+</script>
+</body>
+</html>
